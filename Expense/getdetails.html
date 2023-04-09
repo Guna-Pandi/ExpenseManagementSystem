@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPENSE | DETAILS</title>
+    <link rel="stylesheet" href="getdetails.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  </head>
+  <body>
+    <!-- Navbar  Section Start -->
+    <header>
+      <a href="#" class="logo">EXP<span>₹</span>NSE</a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+          <li ><a href="aboutus.html" >ABOUT US</a></li>
+          <li><a href="help.html" >HELP?</a></li>
+      </ul>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact" id="register">
+      <div class="heading">
+        <h2>ENTER YOUR <span class="head-expense">EXPENSE</span> DETAILS</h2>
+        <span class="heading-span">Fill all the boxes !</span>
+      </div>
+      <div class="contact-form">
+        <form id="form" action="./getdetails.cgi" method="post">
+          <!-- name -->
+          <label for="name" class="lable-form"> Enter Your Name </label>
+          <input type="text" placeholder="Your Name" id="name" name="name" />
+          <!-- gender -->
+          <label for="gender" class="lable-form"> Select Gender </label>
+          <select id="gender" name="gender" class="select-option">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <!-- Total members in the family -->
+          <label for="members" class="lable-form">
+            Enter Total Members in Your Family
+          </label>
+          <input
+            type="number"
+            placeholder="Members"
+            id="totmeb"
+            name="totmeb" />
+          <!-- Contact Info -->
+          <label for="mobile" class="lable-form">
+            Enter Your Mobile Number
+          </label>
+          <input
+            type="tel"
+            id="mobile"
+            placeholder="Mobile number"
+            name="mobile" />
+          <!-- date -->
+          <label for="date" class="lable-form"> Select the Date </label>
+          <input type="date" id="salarydate" name="salarydate" />
+          <!-- Address -->
+          <label for="address" class="lable-form"> Enter Your Address </label>
+          <textarea
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Current Address"
+            required></textarea>
+          <!-- Occupation -->
+          <label for="occupation" class="lable-form"
+            >Select Your Occupation</label
+          >
+          <select id="occupation" name="occupation" class="select-option">
+            <option value="">Occupation</option>
+            <option value="doctor">Doctor</option>
+            <option value="engineer">Engineer</option>
+            <option value="teacher">Teacher</option>
+            <option value="lawyer">Lawyer</option>
+            <option value="writer">Writer</option>
+            <option value="artist">Artist</option>
+            <option value="scientist">Scientist</option>
+            <option value="designer">Designer</option>
+            <option value="programmer">Programmer</option>
+            <option value="nurse">Nurse</option>
+            <option value="accountant">Accountant</option>
+            <option value="entrepreneur">Entrepreneur</option>
+            <option value="chef">Chef</option>
+            <option value="salesperson">Salesperson</option>
+            <option value="pilot">Pilot</option>
+            <option value="musician">Musician</option>
+            <option value="athlete">Athlete</option>
+            <option value="architect">Architect</option>
+            <option value="social worker">Social Worker</option>
+            <option value="journalist">Journalist</option>
+            <option value="graphic designer">Graphic Designer</option>
+            <option value="police officer">Police Officer</option>
+            <option value="others">Others</option>
+          </select>
+          <!-- Salary -->
+          <label for="salary" class="lable-form">
+            Enter Your Monthly Salary
+          </label>
+          <input
+            type="number"
+            id="salary"
+            name="salary"
+            placeholder="Salary"
+            required />
+          <!-- Span -->
+          <span class="span-exp">EXPENSE DETAILS</span>
+          <!-- Expense Details -->
+          <div class="expense-details">
+            <div>
+              <!-- Grocery -->
+              <label for="grocery" class="lable-form"> Grocery Expense </label>
+              <input
+                type="number"
+                placeholder="Grocery Cost"
+                id="grocery"
+                name="grocery" />
+
+              <!-- Home Maintanence -->
+              <label for="home_maintainece" class="lable-form"
+                >Home Maintenance Expense</label
+              >
+              <input
+                type="number"
+                placeholder="Maintanence Cost"
+                id="maintanence"
+                name="maintanence" />
+
+              <!-- Home Maintanence -->
+              <label for="EMI" class="lable-form">EMI Expense</label>
+              <input type="number" placeholder="EMI Cost" id="emi" name="emi" />
+            </div>
+            <!-- sub division -->
+            <div>
+              <!-- Fuel-->
+              <label for="fuel" class="lable-form"> Fuel Expense </label>
+              <input
+                type="number"
+                placeholder="Fuel Cost"
+                id="fuel"
+                name="fuel" />
+
+              <!-- savings -->
+              <label for="saving" class="lable-form">Savings</label>
+              <input
+                type="number"
+                placeholder="Savings"
+                id="savings"
+                name="savings" />
+
+              <!-- Others -->
+              <label for="others" class="lable-form">Other Expense</label>
+              <input
+                type="number"
+                placeholder="Others"
+                id="others"
+                name="others" />
+            </div>
+          </div>
+          <!-- button -->
+          <input
+            type="submit"
+            value="SUBMIT"
+            class="contact-button"
+            id="submitBtn"
+            name="submitBtn" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

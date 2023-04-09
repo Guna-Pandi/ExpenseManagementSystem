@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="register.css" />
+    <title>VIEW | ADD</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <!-- View summary form -->
+          <form action="/Expense/viewsummary.cgi" class="sign-in-form">
+            <h2 class="title">View Expense Summary</h2>
+            <p>
+              <br />
+              It is important to keep track of your expenses to ensure that you
+              are not overspending and staying within your budget. By reviewing
+              your past expenses, you can identify areas where you may have
+              overspent and make adjustments for the future. This can also help
+              you to prioritize your spending, ensuring that your essential
+              expenses are covered before allocating funds for non-essential
+              items.
+              <br />
+            </p>
+
+            <input type="submit" value="View " class="btn solid" />
+          </form>
+          <!-- add new form -->
+          <form action="/Expense/getdetails.html" class="sign-up-form">
+            <h2 class="title">Add New Expense Summary</h2>
+            <p>
+              <br />
+              When you add your expense summary, you are essentially creating a
+              record of all your expenses, which can include items such as
+              bills, groceries, rent, and other necessary expenses. By having
+              this record, you can easily track your spending and identify areas
+              where you may be overspending. This can help you adjust your
+              budget accordingly to ensure that you stay within your salary
+              <br />
+            </p>
+            <!-- button -->
+            <input type="submit" class="btn" value="Add" name="signup" />
+          </form>
+        </div>
+      </div>
+      <!-- container -->
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Add New Expense</h3>
+            <p>
+              "Adding your expense summary can help you maintain your monthly
+              expenses within your salary."
+            </p>
+            <button class="btn transparent" id="sign-up-btn">Add New</button>
+          </div>
+          <img src="img/view.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>View Expense Summary</h3>
+            <p>
+              "You can view your old expense summary, which will help you
+              maintain your monthly expenses within your salary."
+            </p>
+            <button class="btn transparent" id="sign-in-btn">View</button>
+          </div>
+          <img src="img/addnew.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- js File -->
+
+    <script>
+      const sign_in_btn = document.querySelector("#sign-in-btn");
+      const sign_up_btn = document.querySelector("#sign-up-btn");
+      const container = document.querySelector(".container");
+
+      sign_up_btn.addEventListener("click", () => {
+        container.classList.add("sign-up-mode");
+      });
+
+      sign_in_btn.addEventListener("click", () => {
+        container.classList.remove("sign-up-mode");
+      });
+    </script>
+  </body>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const msg = urlParams.get("msg");
+    if (msg) {
+      alert(msg);
+    }
+  </script>
+</html>

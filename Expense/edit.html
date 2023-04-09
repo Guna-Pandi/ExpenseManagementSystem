@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDIT EXPENSE</title>
+    <link rel="stylesheet" href="getdetails.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  </head>
+  <body>
+    <!-- Navbar  Section Start -->
+    <header>
+      <a href="#" class="logo">ED<span>I</span>T EXP<span>₹</span>NSE</a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact" id="register">
+      <div class="heading">
+        <h2>ENTER <span class="head-expense">NEW</span> EXPENSE DETAILS</h2>
+        <span class="heading-span">Fill all the boxes !</span>
+      </div>
+      <div class="contact-form">
+        <form id="form" action="./edit.cgi" method="post">
+          <!-- date -->
+          <label for="date" class="lable-form"> Select the Date </label>
+          <input type="date" id="salarydate" name="salarydate" />
+          <!-- Salary -->
+          <label for="salary" class="lable-form">
+            Enter Your Monthly Salary
+          </label>
+          <input
+            type="number"
+            id="salary"
+            name="salary"
+            placeholder="Salary"
+            required />
+          <!-- Span -->
+          <span class="span-exp">NEW EXPENSE DETAILS</span>
+          <!-- Expense Details -->
+          <div class="expense-details">
+            <div>
+              <!-- Grocery -->
+              <label for="grocery" class="lable-form"> Grocery Expense </label>
+              <input
+                type="number"
+                placeholder="Grocery Cost"
+                id="grocery"
+                name="grocery" />
+
+              <!-- Home Maintanence -->
+              <label for="home_maintainece" class="lable-form"
+                >Home Maintenance Expense</label
+              >
+              <input
+                type="number"
+                placeholder="Maintanence Cost"
+                id="maintanence"
+                name="maintanence" />
+
+              <!-- Home Maintanence -->
+              <label for="EMI" class="lable-form">EMI Expense</label>
+              <input type="number" placeholder="EMI Cost" id="emi" name="emi" />
+            </div>
+            <!-- sub division -->
+            <div>
+              <!-- Fuel-->
+              <label for="fuel" class="lable-form"> Fuel Expense </label>
+              <input
+                type="number"
+                placeholder="Fuel Cost"
+                id="fuel"
+                name="fuel" />
+
+              <!-- savings -->
+              <label for="saving" class="lable-form">Savings</label>
+              <input
+                type="number"
+                placeholder="Savings"
+                id="savings"
+                name="savings" />
+
+              <!-- Others -->
+              <label for="others" class="lable-form">Other Expense</label>
+              <input
+                type="number"
+                placeholder="Others"
+                id="others"
+                name="others" />
+            </div>
+          </div>
+          <!-- button -->
+          <input
+            type="submit"
+            value="EDIT"
+            class="contact-button"
+            id="submitBtn"
+            name="submitBtn" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

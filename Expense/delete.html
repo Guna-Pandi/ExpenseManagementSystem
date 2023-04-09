@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DELETE EXPENSE</title>
+    <link rel="stylesheet" href="getdetails.css" />
+    <link rel="stylesheet" href="delete.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  </head>
+  <body>
+    <!-- Navbar  Section Start -->
+    <header>
+      <a href="#" class="logo">DEL<span>₹</span>TE  EXP<span>₹</span>NSE</a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact-delete" id="register">
+      <div class="heading-delete">
+        <h2>ENTER <span class="head-expense">DATE</span> TO DELETE</h2>
+      </div>
+      <div class="contact-form">
+        <form id="form" action="./delete.cgi" method="post">
+          <!-- date -->
+          <label for="date" class="lable-form"> Select the Date </label>
+          <input type="date" id="salarydate" name="salarydate" />
+         
+          <input
+            type="submit"
+            value="DELETE"
+            class="delete-button"
+            id="submitBtn"
+            name="submitBtn" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
