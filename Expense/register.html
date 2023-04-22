@@ -10,9 +10,9 @@
     <title>SIGN IN | SIGN UP</title>
   </head>
   <body>
-  <!-- Navbar Section End -->
-  
-  <!-- Contact Section Start -->
+    <!-- Navbar Section End -->
+
+    <!-- Contact Section Start -->
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
@@ -25,7 +25,11 @@
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" name="password" required/>
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                required />
             </div>
             <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
@@ -53,11 +57,15 @@
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" name="email" required/>
+              <input type="email" placeholder="Email" name="email" required />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" name="password" required/>
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                required />
             </div>
             <!-- button -->
             <input type="submit" class="btn" value="Sign up" name="signup" />
@@ -84,10 +92,7 @@
         <div class="panel left-panel">
           <div class="content">
             <h3>New here ?</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
-            </p>
+            <p>"Join us on our mission. Sign up and be a part of it."</p>
             <button class="btn transparent" id="sign-up-btn">Sign up</button>
           </div>
           <img src="img/logo.svg" class="image" alt="" />
@@ -95,10 +100,7 @@
         <div class="panel right-panel">
           <div class="content">
             <h3>One of us ?</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
-            </p>
+            <p>"Welcome back! We've missed you. Please sign in."</p>
             <button class="btn transparent" id="sign-in-btn">Sign in</button>
           </div>
           <img src="img/register.svg" class="image" alt="" />
@@ -120,15 +122,13 @@
       sign_in_btn.addEventListener("click", () => {
         container.classList.remove("sign-up-mode");
       });
-
-    
     </script>
   </body>
   <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const msg = urlParams.get("msg");
-      if (msg) {
-        alert(msg);
-      }
+    const urlParams = new URLSearchParams(window.location.search);
+    const msg = urlParams.get("msg");
+    if (msg) {
+      alert(msg);
+    }
   </script>
 </html>

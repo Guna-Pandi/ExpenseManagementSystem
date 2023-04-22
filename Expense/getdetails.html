@@ -6,23 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EXPENSE | DETAILS</title>
     <link rel="stylesheet" href="getdetails.css" />
+    <link rel="stylesheet" href="front.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
   </head>
   <body>
-    <!-- Navbar  Section Start -->
-    <header>
-      <a href="#" class="logo">EXP<span>₹</span>NSE</a>
-
-      <div class="bx bx-menu" id="menu-icon"></div>
-
-      <ul class="navbar">
-          <li ><a href="aboutus.html" >ABOUT US</a></li>
-          <li><a href="help.html" >HELP?</a></li>
-      </ul>
-    </header>
-    <!-- Navbar Section End -->
+    <!-- front content -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="#" class="logo">EXP<span>₹</span>NSE</a>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="help.html">Help?</a></li>
+          </ul>
+        </div>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <img
+        src="images/1.png"
+        class="translateX"
+        data-speed="0.25"
+        id="moon"
+        alt="" />
+      <img
+        src="images/2.png"
+        class="translateY"
+        data-speed="0.35"
+        id="clouds"
+        alt="" />
+      <img
+        src="images/3.png"
+        class="translateY"
+        data-speed="0.15"
+        id="mount"
+        alt="" />
+      <h1 id="text" class="translateX" data-speed="-5">Expense Tracker</h1>
+      <a href="#" id="btn">Explore</a>
+      <img
+        src="images/4.png"
+        class="translateY"
+        data-speed="0"
+        id="base"
+        alt="" />
+    </section>
 
     <!-- Contact Section Start -->
     <section class="contact" id="register">
@@ -175,5 +210,20 @@
         </form>
       </div>
     </section>
+    <script>
+      const translateX = document.querySelectorAll(".translateX");
+      const translateY = document.querySelectorAll(".translateY");
+      window.addEventListener("scroll", () => {
+        let scroll = window.pageYOffset;
+        translateX.forEach((element) => {
+          let speed = element.dataset.speed;
+          element.style.transform = `translateX(${scroll * speed}px)`;
+        });
+        translateY.forEach((element) => {
+          let speed = element.dataset.speed;
+          element.style.transform = `translateY(${scroll * speed}px)`;
+        });
+      });
+    </script>
   </body>
 </html>

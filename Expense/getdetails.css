@@ -31,7 +31,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff000095; /* color of the scrollbar thumb */
+  background-color: #1100ff95; /* color of the scrollbar thumb */
   border-radius: 4px; /* roundness of the scrollbar thumb */
 }
 
@@ -85,14 +85,14 @@ header.shadow {
   box-shadow: 0 0 4px rgb(14 55 54 / 15%);
 }
 .logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  color: var(--text-color);
+  color: #080236;
 }
 .logo span {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  color: crimson;
+  color: rgb(255, 0, 0);
 }
 .span-2 {
   color: crimson;
@@ -181,7 +181,7 @@ form textarea {
 .contact-button {
   width: 160px;
   cursor: pointer;
-  background: #27d95c;
+  background: #2739d9;
   color: #fff;
   justify-content: center;
   text-transform: uppercase;
@@ -206,45 +206,9 @@ form textarea {
 }
 
 .contact-button:hover {
-  background: rgb(218, 30, 30);
+  background: rgb(0, 0, 0);
 }
 
-.hidden {
-  display: none;
-}
-.success {
-  color: #22cf91;
-  display: flex;
-  justify-content: center;
-}
-
-.failure {
-  color: red;
-  justify-content: center;
-  display: flex;
-}
-
-.eligible {
-  display: none;
-  justify-content: center;
-}
-.eli-success {
-  color: #22cf91;
-}
-
-.neli-failure {
-  color: red;
-}
-.error {
-  display: flex;
-  justify-content: center;
-  color: red;
-}
-.pass-msg {
-  display: flex;
-  justify-content: center;
-  color: #22cf91;
-}
 .lable-form {
   font-weight: 500;
   font-size: 18px;
@@ -268,7 +232,7 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-.ul-navbarlinks{
+.ul-navbarlinks {
   font-size: 15px;
   color: #27d95c;
   cursor: pointer;
